@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioSimpleMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הודעה פשוטה" />
+
+        <RadioButton
+            android:id="@+id/radioColoredMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הודעה בצבע" />
+
+        <RadioButton
+            android:id="@+id/radioImageMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הודעה עם תמונה" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="הכנס הודעה"
+        android:backgroundTint="?attr/colorControlActivated"
+        android:textColorHint="?attr/colorControlActivated" />
+
+    <Spinner
+        android:id="@+id/spinnerColors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spinnerImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:text="בחר גודל טקסט" />
+
+    <SeekBar
+        android:id="@+id/seekBarTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:min="10"
+        android:max="100"
+        android:progress="14" />
+
+    <Spinner
+        android:id="@+id/spinnerTextColors"
+        android:layout_marginTop="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialogSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:text="בחר גודל דיאלוג" />
+
+    <SeekBar
+        android:id="@+id/seekBarDialogSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:min="100"
+        android:max="10000"
+        android:progress="300" />
+
+    <TextView
+        android:id="@+id/dialogDurationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:text="בחר משך דיאלוג (בשניות)" />
+
+    <SeekBar
+        android:id="@+id/seekBarDialogDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:min="1"
+        android:max="10"
+        android:progress="2" />
+    <CheckBox
+        android:id="@+id/checkBoxAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="הוספת אנימציה של הזזה" />
+
+    <Button
+        android:id="@+id/buttonShowToast"
+        android:layout_marginTop="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="הצג הודעה" />
+
+</LinearLayout>

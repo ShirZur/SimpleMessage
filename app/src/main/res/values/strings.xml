@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SimpleMessage</string>
+    <string-array name="colors_array">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Cyan</item>
+        <item>Magenta</item>
+    </string-array>
+
+    <string-array name="images_array">
+        <item>dog</item>
+        <item>woman</item>
+    </string-array>
+</resources>
