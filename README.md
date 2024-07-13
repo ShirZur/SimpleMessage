@@ -30,6 +30,7 @@ To include the Simple Toast Message Library in your project, follow these steps:
 
 Add the following code to the `dependencyResolutionManagement` section in your project's `settings.gradle` file:
 
+```groovy
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
