@@ -38,7 +38,7 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-
+```
 ### Step 2: Add Dependency
 
 Add the library dependency to your app module's build.gradle file:
