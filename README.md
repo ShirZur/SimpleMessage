@@ -21,6 +21,9 @@ SimpleToast is a custom Android library for displaying customized toast messages
 ### 6. Close Button
 - A close button to dismiss the dialog
 
+- ### 7. Display Duration
+- Set the duration for how long the message should be displayed.
+
 
 ## Installation
 
@@ -47,5 +50,36 @@ Add the library dependency to your app module's build.gradle file:
 dependencies {
     implementation 'com.github.ShirZur:messagelibrary:Tag'
 }
+```
+
+##Usage
+### Simple Toast Message
+```groovy
+SimpleToastMessage.show(context, "Hello World", 16, Color.WHITE, 200, 3000, true);
+```
+
+### Toast Message with Image
+```groovy
+SimpleToastMessage.showWithImage(context, "Hello World", R.drawable.your_image, 16, 48, Color.WHITE, 200, 3000, true);
+```
+### Toast Message with Background Color
+```groovy
+SimpleToastMessage.showWithBackgroundColor(context, "Hello World", Color.RED, 16, Color.WHITE, 200, 3000, true);
+```
+### Toast Message with Custom Font
+```groovy
+Typeface customFont = Typeface.createFromAsset(context.getAssets(), "fonts/custom_font.ttf");
+SimpleToastMessage.showCustomFont(context, "Hello World", 16, Color.WHITE, customFont, 200, 3000, true);
+
+```
+
+### Display Duration
+```groovy
+SimpleToastMessage.show(context, "Hello World", 16, Color.WHITE, 200, 5000, true); // 5000 milliseconds = 5 seconds
 
 
+```
+
+In these examples, context is the current context, message is the text to be displayed,
+textSize is the size of the text, textColor is the color of the text, dialogSize is the size of the dialog, dialogDuration is the duration of the dialog in milliseconds, 
+and withAnimation indicates whether to show the dialog with animation.
