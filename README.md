@@ -2,6 +2,7 @@
 SimpleToast is a custom Android library for displaying customized toast messages as dialogs. This library allows you to create simple, colored, and image-based messages with various customization options such as text size, dialog size, duration, and animation effects.
 
 ## Demonstration Video
+https://github.com/user-attachments/assets/d342ede1-041a-4e44-b595-481ae74887fe
 
 
 ## Features
